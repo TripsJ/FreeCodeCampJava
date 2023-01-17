@@ -14,4 +14,14 @@ public class PersonTest {
         Person jerome = new Person();
         assertEquals("Hello World", jerome.helloWorld());
     }
+
+    @Test
+    public void shouldReturnHelloJerome() {
+        Person person = new Person();
+        assertEquals("Hello Jerome", person.hello("Jerome"));
+
+
+    }
 }
+
+
