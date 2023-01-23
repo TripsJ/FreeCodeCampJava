@@ -22,6 +22,18 @@ public class PersonTest {
 
 
     }
+
+
+    @Test
+    public void shouldReturnNumberOfPersons(){
+        Person first = new Person();
+        Person second = new Person();
+        assertEquals(2, Person.countPersons());
+    }
+
+
+
+
 }
 
 

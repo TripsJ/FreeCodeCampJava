@@ -1,6 +1,7 @@
 package works.trips.javacourse.lesson2;
 
 public class Person {
+    private static int personCounter;
     private Name personName;
     public String helloWorld() {
         return "Hello World";
@@ -14,7 +15,12 @@ public class Person {
     }
 
     public Person(){
+        personCounter++;
         //default constructor _ empty
     }
 
+    public static int countPersons() {
+        return personCounter;
+
+    }
 }
